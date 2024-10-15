@@ -22,3 +22,51 @@ ul.nav a:hover {
     background-color: #555;
     color: white;
 }
+
+
+.threats-title-section {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    padding: 1px 2px;
+}
+.threats-image1-section {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+.conservation-image1-section {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+.conservation-title-section {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    padding: 1px 2px;
+}
+.threats-main-section {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+}
+.threats-sub1-section {
+    grid-column: 2 / span 1;
+    grid-row: 5;
+}
+.threats-sub2-section {
+    grid-column: 2 / span 1;
+    grid-row: 6;
+}
+.threats-sub3-section {
+    grid-column: 3 / span 1;
+    grid-row: 6;
+}
+.threats-sub4-section {
+    grid-column: 3 / span 1;
+    grid-row: 7;
+}
+.threats-image2-section {
+    grid-column: 3 / span 1;
+    grid-row: 5;
+}
+.threats-image3-section {
+    grid-column: 2 / span 1;
+    grid-row: 7;
+}
