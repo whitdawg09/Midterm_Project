@@ -70,3 +70,88 @@ ul.nav a:hover {
     grid-column: 2 / span 1;
     grid-row: 7;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+    padding: 20px;
+}
+
+
+.grid-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-section img {
+    width: 100%; 
+    height: auto;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+ul.nav {
+    list-style-type: none;
+}
+
+ul.nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+ul.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    text-decoration: underline;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color:  rgb(150, 187, 224);
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.nav {
+    grid-column: 1;
+    grid-row: 1;
+}
+ 
+.grid-container {
+   display: grid;
+   grid-gap: 10px;
+   grid-template-columns: auto auto auto;
+}
+.grid-item {
+   text-align: center;
+   padding: 20px;
+   background-color: lightblue;
+}
+.species-image1-section {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+}
