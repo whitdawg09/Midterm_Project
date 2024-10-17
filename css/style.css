@@ -182,3 +182,333 @@ ul.nav li a:hover {
     grid-gap: 20px;
     padding: 20px;
 }
+
+.species-subtitle1-section {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+        }
+        .species-subtitle2-section {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+        }
+        .species-subtitle3-section {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+        }
+        .species-title-section {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding: 1px 2px;
+}
+        .species-image1-section {
+    grid-column: 1 / span 1;
+    grid-row: 3;
+   margin-left: 300px;
+    margin: 50px;
+}
+        .species-text1-section {
+    grid-column: 2 / span 1;
+    grid-row: 3;
+    margin-right: 100px;
+    margin: 50px;
+}
+        .species-image2-section {
+    grid-column: 2 / span 1;
+    grid-row: 5;
+    margin-right: 100px;
+    margin: 50px;
+}
+ 
+        .species-text2-section {
+    grid-column: 1 / span 1;
+    grid-row: 5;
+    margin: 50px;
+    margin-left: 70px;
+    margin-right: 200px;
+}
+        .species-image3-section {
+    grid-column: 1 / span 1;
+    grid-row: 7;
+    padding-left: 100px;
+    margin: 50px;
+}
+        .species-text3-section {
+    grid-column: 2 / span 1;
+    grid-row: 7;
+    margin-right: 170px;
+    margin: 50px;
+}
+div.polaroid {     text-align: center; ... by Suhani Verma
+Suhani Verma
+10:58 AM
+div.polaroid {
+    text-align: center;
+    width: 47%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
+    display:inline-block;
+}
+ 
+div.mypolaroid {
+    text-align: center;
+    width: 47%;
+    margin: 20px;
+    display:inline-block;
+    padding-left: 350px;
+    padding-top: 10px;
+}
+div.container {     text-align: center; 
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+    display:inline-block
+}
+.threats-sidenav-section {
+    grid-column: 1 / span 1;
+    grid-row: 4;
+    padding: 1px 2px;
+}
+ 
+.conservation-main-section {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+    padding: 1px 2px;
+}
+.conservation-sub1-section {
+    grid-column: 2 / span 2;
+    grid-row: 5;
+    padding: 1px 2px;
+}
+.conservation-sub2-section {
+    grid-column: 2 / span 2;
+    grid-row: 6;
+    padding: 1px 2px;
+}
+.conservation-sub3-section {
+    grid-column: 2 / span 2;
+    grid-row: 7;
+    padding: 1px 2px;
+}
+ 
+.conservation-sidenav-section {
+    grid-column: 1 / span 1;
+    grid-row: 4;
+    padding: 1px 2px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+} 
+.container {
+    position: relative;
+    width: 50%;
+  }
+   
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+   
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #008CBA;
+  }
+   
+  .container:hover .overlay {
+    opacity: 1;
+  }
+   
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .container {
+
+    position: relative;
+  
+    width: 50%;
+  
+  }
+   
+  .image {
+  
+    display: block;
+  
+    width: 100%;
+  
+    height: auto;
+  
+  }
+   
+  .overlay {
+  
+    position: absolute;
+  
+    top: 0;
+  
+    bottom: 0;
+  
+    left: 0;
+  
+    right: 0;
+  
+    height: 100%;
+  
+    width: 100%;
+  
+    opacity: 0;
+  
+    background-color: #008CBA;
+  
+  }
+   
+  .container:hover .overlay {
+  
+    opacity: 1;
+  
+  }
+   
+  .text {
+  
+    color: white;
+  
+    font-size: 20px;
+  
+    position: absolute;
+  
+    top: 50%;
+  
+    left: 50%;
+  
+    -webkit-transform: translate(-50%, -50%);
+  
+    -ms-transform: translate(-50%, -50%);
+  
+    transform: translate(-50%, -50%);
+  
+    text-align: center;
+  
+  }
+   
+  edit the colors how you would like
+   
+  ok um
+   
+  scratch all that
+   
+  just put this into the css page:
+   
+  .navmenu-section {
+              grid-column: 1 / span 3;
+              grid-row: 1;
+              padding: 1px 2px;
+          }
+          .threats-sidenav-section {
+              grid-column: 1 / span 1;
+              grid-row: 4;
+              padding: 1px 2px;
+          }
+          .conservation-main-section {
+              grid-column: 2 / span 2;
+              grid-row: 4;
+              padding: 1px 2px;
+          }
+          .conservation-sub1-section {
+              grid-column: 2 / span 2;
+              grid-row: 5;
+              padding: 1px 2px;
+          }
+          .conservation-sub2-section {
+              grid-column: 2 / span 2;
+              grid-row: 6;
+              padding: 1px 2px;
+          }
+          .conservation-sub3-section {
+              grid-column: 2 / span 2;
+              grid-row: 7;
+              padding: 1px 2px;
+          }
+          .threats-sidenav-section {
+              grid-column: 1 / span 1;
+              grid-row: 4 / span 4;
+              padding: 1px 2px;
+          }
+          .footer {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              z-index: 10;
+          }
+          .container {
+              margin-left: auto;
+              margin-right: auto;
+          }
+   
+          .image {
+              display: block;
+              width: 100%;
+              height: auto;
+          }
+   
+          .overlay {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: 100%;
+              opacity: 0;
+              background-color: #008cba;
+          }
+   
+          .container:hover .overlay {
+              opacity: 1;
+          }
+   
+          .text {
+              color: white;
+              font-size: 20px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              text-align: center;
+          }
+   
+          .image-one {
+              width: 100%;
+          }
+   
+          .image-container {
+              display: inline-block;
+              position: relative;
+          }
+   
+          li {
+              list-style-type: none;
+          }
+  th {
+      text-align: center;
+  }
+    

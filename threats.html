@@ -1,63 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Threats to Sharks</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav>
-         <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="home">Species</a></li>
-            <li><a href="about">Gallery</a></li>
-            <li><a href="about">Habitat</a></li>
-            <li><a href="threats.html">Threats</a></li>
-            <li><a href="conservation.html">Conservation</a></li>
-        </ul>
-    </nav>
-    <div class="threats-image1-section grid item">
-        <img style="width: 1200px;" src="images/threats_titleshark.jpg">
-    </div>
-    <div class="threats-title-section grid-item">
-        <h1>Threats to Sharks</h1>
-    </div>
-    <div class="threats-main-section grid-item">
-        <h2>Many Species of Sharks are Endangered</h2>
-        <p>According to the International Union for Conservation of Nature (IUCN), 31.2% of shark species are threatened with extinction. This includes 11% of sharks that are endangered, 12% that are critically endangered, and 14% that are vulnerable</p>
-        <p>Main threats include: Overfishing, Habitat Destruction, Climate Change, and Shark Finning</p>
-    </div>
-    <div class="threats-image2-section grid-item">
-        <img style="width: 350px;" src="images/threats_sub1shark.jpg">
-    </div>
-    <div class="threats-sub1-section grid-item">
-        <h3>Overfishing</h3>
-        <p>Overfishing is the biggest threat to most larger reef sharks. This is because overfishing depletes the shark's food supply, disrupting their natural diet.</p>
-    </div>
-    <div class="threats-sub2-section grid-item">
-        <h3>Habitat Destruction</h3>
-        <p>Damage to reefs and other key habitats, such as mangroves, which are used as nursery grounds by some shark species.</p>
-    </div>
-    <div class="threats-sub3-section grid-item">
-        <h3>Climate Change</h3>
-        <p>Climate Change is warming ocean waters and disrupting the migration patterns and habitats of sharks, pushing them to less suitable environments. It also threatens biodiversity, which threatens shark populations that are dependent on healthy ecosystems.</p>
-    </div>
-    <div class="threats-sub4-section grid item">
-        <h3>Shark Finning</h3>
-        <p>A growing trade in shark fins, which are often used to make an expensive Asian soup, has also been a serious threat to shark populations. An estimated 100 million sharks are killed annually for their fins.</p>
-    </div>
-    <div class="threats-image3-section grid-item">
-        <img style="width: 350px;" src="images/threats_sub3shark.jpg">
-    </div>
-    <div class="threats-sidenav-section grid-item">
-        <ul class>
-            <li><a href="https://www.worldwildlife.org/species/shark" target="_blank">World Wild Life Foundation</a></li>
-            <li><a href= "https://www.sharktrust.org/shark-threats" target="_blank">Shark Trust</a></li>
-            <li><a href= "https://saveourseas.com/worldofsharks/why-are-sharks-threatened" target="_blank">Save Our Seas Foundation</a></li>
-            <li><a href= "https://usa.oceana.org/blog/what-are-some-biggest-threats-facing-sharks/" target="_blank">Oceana</a></li>
-            <li><a href= "https://insideclimatenews.org/news/12072024/todays-climate-sharks-marine-heat-cold/" target="_blank">Inside Climate News</a></li>
-        </ul>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Threats to Sharks</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <style>
+        .navmenu-section {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+            padding: 1px 2px;
+        }
+        .threats-sidenav-section {
+            grid-column: 1 / span 1;
+            grid-row: 4;
+            padding: 1px 2px;
+        }
+        .conservation-main-section {
+            grid-column: 2 / span 2;
+            grid-row: 4;
+            padding: 1px 2px;
+        }
+        .conservation-sub1-section {
+            grid-column: 2 / span 2;
+            grid-row: 5;
+            padding: 1px 2px;
+        }
+        .conservation-sub2-section {
+            grid-column: 2 / span 2;
+            grid-row: 6;
+            padding: 1px 2px;
+        }
+        .conservation-sub3-section {
+            grid-column: 2 / span 2;
+            grid-row: 7;
+            padding: 1px 2px;
+        }
+        .threats-sidenav-section {
+            grid-column: 1 / span 1;
+            grid-row: 4 / span 4;
+            padding: 1px 2px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+        }
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            background-color: #008cba;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .image-one {
+            width: 100%;
+        }
+
+        .image-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+    <body style="position: relative">
+        <div class="grid-container">
+            <div class="navmenu-section grid item">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="species.html">Species</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="threats.html">Threats</a></li>
+                        <li><a href="conservation.html">Protection</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="threats-image1-section grid item">
+                <img class="image-one" src="images/threats_titleshark.jpg" />
+            </div>
+            <div class="threats-title-section grid-item">
+                <h1>Threats to Sharks</h1>
+            </div>
+            <div class="threats-main-section grid-item">
+                <h2>Many Species of Sharks are Endangered</h2>
+                <p>
+                    According to the International Union for Conservation of
+                    Nature (IUCN), 31.2% of shark species are threatened with
+                    extinction. This includes 11% of sharks that are endangered,
+                    12% that are critically endangered, and 14% that are
+                    vulnerable
+                </p>
+                <p>
+                    Main threats include: Overfishing, Habitat Destruction,
+                    Climate Change, and Shark Finning
+                </p>
+            </div>
+            <div class="threats-image2-section grid-item">
+                <div class="container">
+                    <div class="image-container">
+                        <img
+                            style="width: 350px"
+                            src="images/threats_sub1shark.jpg"
+                        />
+                        <div class="overlay">
+                            <div class="text">Shark Tangled in Net</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="threats-sub1-section grid-item">
+                <h3>Overfishing</h3>
+                <p>
+                    Overfishing is the biggest threat to most larger reef
+                    sharks. This is because overfishing depletes the shark's
+                    food supply, disrupting their natural diet.
+                </p>
+            </div>
+            <div class="threats-sub2-section grid-item">
+                <h3>Habitat Destruction</h3>
+                <p>
+                    Damage to reefs and other key habitats, such as mangroves,
+                    which are used as nursery grounds by some shark species.
+                </p>
+            </div>
+            <div class="threats-sub3-section grid-item">
+                <h3>Climate Change</h3>
+                <p>
+                    Climate Change is warming ocean waters and disrupting the
+                    migration patterns and habitats of sharks, pushing them to
+                    less suitable environments. It also threatens biodiversity,
+                    which threatens shark populations that are dependent on
+                    healthy ecosystems.
+                </p>
+            </div>
+            <div class="threats-sub4-section grid-item">
+                <h3>Shark Finning</h3>
+                <p>
+                    A growing trade in shark fins, which are often used to make
+                    an expensive Asian soup, has also been a serious threat to
+                    shark populations. An estimated 100 million sharks are
+                    killed annually for their fins.
+                </p>
+            </div>
+            <div class="threats-image3-section grid-item">
+                <div class="container">
+                    <div class="image-container">
+                        <img
+                            style="width: 350px"
+                            src="images/threats_sub3shark.jpg"
+                        />
+                        <div class="overlay">
+                            <div class="text">Shark Fins Drying in the Sun</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="threats-sidenav-section grid-item">
+                <h2>Resources:</h2>
+                <ul style="padding-inline: 10px">
+                    <li>
+                        <a
+                            href="https://www.worldwildlife.org/species/shark"
+                            target="_blank"
+                            >World Wild Life Foundation</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.sharktrust.org/shark-threats"
+                            target="_blank"
+                            >Shark Trust</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://saveourseas.com/worldofsharks/why-are-sharks-threatened"
+                            target="_blank"
+                            >Save Our Seas Foundation</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://usa.oceana.org/blog/what-are-some-biggest-threats-facing-sharks/"
+                            target="_blank"
+                            >Oceana</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://insideclimatenews.org/news/12072024/todays-climate-sharks-marine-heat-cold/"
+                            target="_blank"
+                            >Inside Climate News</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">Made by Whitley, Suhani, and Sonya</div>
+    </body>
 </html>

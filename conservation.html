@@ -4,8 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conservation Efforts</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<style>
+.navmenu-section {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    padding: 1px 2px;
+}
+.conservation-main-section {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+    padding: 1px 2px;
+}
+.conservation-sub1-section {
+    grid-column: 2 / span 2;
+    grid-row: 5;
+    padding: 1px 2px;
+}
+.conservation-sub2-section {
+    grid-column: 2 / span 2;
+    grid-row: 6;
+    padding: 1px 2px;
+}
+.conservation-sub3-section {
+    grid-column: 2 / span 2;
+    grid-row: 7;
+    padding: 1px 2px;
+}
+.conservation-sidenav-section {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 4;
+    padding: 1px 2px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+ 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+ 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #008CBA;
+}
+ 
+.container:hover .overlay {
+  opacity: 1;
+}
+ 
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+th {
+    text-align: center;
+}
+</style>
+<body style="position:relative">
+    <div class="grid-container">
+    <div class="navmenu-section grid-item">
+        <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="species.html">Species</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="conservation.html">Protection</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="conservation-image1-section grid item">
+        <img style="width: 100%;" src="images/conservation_titleshark.jpg">
+    </div>
+    <div class="conservation-title-section grid-item">
+        <h1>Conservation Efforts</h1>
+    </div>
+    <div class="conservation-main-section grid-item">
+        <h2>The Importance of Shark Conservation</h2>
+        <p>Sharks are keystone species that play an essential role in oceanic and coastal communities. Because they are apex predators, they stabilize food webs and act as a barometer for ocean health. Thus, protecting them will also help significantly with broader conservation issues, such as protecting our ocean’s health, the world’s food security, and the economic stability of hundreds of millions of people.</p>
+    </div>
+    <div class="conservation-sub1-section grid-item">
+        <h3>What Conservation Efforts are in Process</h3>
+        <p>
+            <ul>
+                <li><b>Marine Protected Areas (MPAs):</b> Shark populations thrive in fully protected areas, especially when combined with national policies that restrict destructive fishing practices</li>
+                <li><b>Fisheries Management:</b> Many organizations are tightening regulations on shark finning and bycatch reduction to protect vulnerable species like Oceanic Whitetips and Threshers</li>
+                <li><b>Monitoring Programs:</b> Global efforts like the FinPrint project use underwater cameras to track shark populations and guide conservation strategies based on alarming declines</li>
+            </ul>
+        </p>
+    </div>
+    <div class="conservation-sub2-section grid-item">
+        <h3>Organizations that are Helping</h3>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Shark League for the Atlantic and Mediterranean</th>
+                    <th>Global FinPrint</th>
+                    <th>Shedd Aquarium</th>
+                    <th>WildAid</th>
+                    <th>World Wildlife Fund (WWF)</th>
+                </tr>
+            </thead>
+            <tbody class="nth-of-type">
+                <tr class="last-of-type">
+                    <td>Works on strengthening shark finning bans and promoting sustainable fishing practices through regional fisheries management organizations (RFMOs) like the IOTC</td>
+                    <td>Conducts worldwide surveys of reef shark populations using underwater cameras to track population trends and inform conservation strategies</td>
+                    <td>Partners in shark research, focusing on the effects of MPAs and fisheries management on shark populations, using video data analysis to assess conservation efforts globally</td>
+                    <td>Aims to reduce the demand for shark fin soup through awareness campaigns, helping lower shark fin sales, especially in China.</td>
+                    <td>Engages in policy advocacy and awareness campaigns to protect endangered shark species and promote sustainable fisheries management</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="conservation-sub3-section grid-item">
+        <h3>How Can You Help?</h3>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Reduce Single-Use Plastics</th>
+                    <th>Make Sustainable Seafood Choices</th>
+                    <th>Say No to Shark Products</th>
+                    <th>Support Conservation Organizations</th>
+                    <th>Spread Awareness</th>
+                </tr>
+            </thead>
+            <tbody class="nth-of-type">
+                <tr class="last-of-type">
+                    <td>Plastic waste often ends up in oceans, harming sharks and other marine life. Using reusable bags, bottles, and containers helps keep the oceans cleaner</td>
+                    <td>Avoid seafood from sources that contribute to overfishing or bycatch of sharks. Use guides like the Marine Stewardship Council (MSC) or Seafood Watch for sustainable options</td>
+                    <td>Avoid buying products made from sharks, such as shark fin soup or shark cartilage supplements, which contribute to unsustainable harvesting</td>
+                    <td>Donating or volunteering with organizations like the Shark League or WWF supports ongoing efforts to protect shark species</td>
+                    <td>Educating others about the importance of sharks for ocean ecosystems can reduce misconceptions and inspire conservation actions. Social media campaigns and petitions are easy ways to get involved</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="conservation-sidenav-section grid-item">
+        <h2>Resources:</h2>
+        <p>
+            <ul style="padding-inline: 10px;">
+                <li><a href="https://saveourseas.com/worldofsharks/how-can-i-help-sharks">Save Our Seas Foundation</a></li>
+                <li><a href="https://globalfinprint.org/about/">Global Finprint</a></li>
+                <li><a href="https://www.sheddaquarium.org/animals/sharks">Shedd Aquarium</a></li>
+                <li><a href="https://wildaid.org/programs/sharks/">WildAid</a></li>
+                <li><a href="https://sharks.panda.org/about-us">World Wildlife Fund</a></li>
+                <li><a href="https://www.sharkleague.org/">Shark League for the Atlantic and Mediterranean</a></li>
+            </ul>
+        </p>
+    </div>
+</div>
+<div class="footer">Made by Whitley, Suhani, and Sonya</div>
 </body>
 </html>
